@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohamad Unternehmer – Uber Eats Flottenpartner</title>
+  <style>
+    :root {
+      --green:#006241; --dark:#004d33; --accent:#e63946; --bg:#f8f8f8; --text:#333;
+    }
+    * { box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: var(--bg); color: var(--text); line-height: 1.6; }
+    header { background: var(--green); color: #fff; padding: 60px 20px; text-align: center; }
+    header .logo { font-weight: 700; font-size: 28px; letter-spacing: 1px; }
+    header .tag { margin-top: 10px; font-size: 18px; opacity: 0.95; }
+    .cta { display: inline-block; background: var(--accent); color: #fff; padding: 14px 28px; border-radius: 6px; text-decoration: none; margin-top: 20px; font-weight: 600; transition: background 0.3s; }
+    .cta:hover { background: #c92f3c; }
+    nav { background: var(--dark); text-align: center; padding: 12px; position: sticky; top: 0; z-index: 10; }
+    nav a { color: #fff; margin: 0 16px; text-decoration: none; font-weight: 600; transition: color 0.3s; }
+    nav a:hover { color: #ddd; }
+    section { padding: 40px 20px; max-width: 1100px; margin: 20px auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+    h2 { color: var(--green); margin-top: 0; font-size: 26px; }
+    ul { list-style: none; padding: 0; margin: 0; }
+    ul li { margin: 10px 0; font-size: 16px; }
+    ul li::before { content: "✔️ "; margin-right: 8px; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 30px; align-items: center; }
+    @media (min-width: 800px) { .grid { grid-template-columns: 1.1fr 0.9fr; } }
+    .profilbild { width: 100%; max-width: 380px; border-radius: 12px; object-fit: cover; display: block; margin: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    form { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 15px; }
+    form input, form select, form textarea { padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 15px; }
+    form textarea { grid-column: 1 / -1; min-height: 130px; }
+    form button { grid-column: 1 / -1; padding: 14px 28px; border: 0; background: var(--green); color: #fff; border-radius: 6px; font-weight: 600; cursor: pointer; transition: background 0.3s; }
+    form button:hover { background: #004d33; }
+    .contact a { color: var(--green); text-decoration: none; font-weight: 600; }
+    footer { background: #f1faee; text-align: center; padding: 20px; font-size: 14px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">MS – Mohamad Unternehmer</div>
+  <div class="tag">Schnell. Frisch. Direkt zu dir. • Offizieller Flottenpartner von Uber Eats</div>
+  <a class="cta" href="https://www.ubereats.com/de" target="_blank" rel="noopener">Jetzt über Uber Eats bestellen</a>
+</header>
+
+<nav>
+  <a href="#uber">Service</a>
+  <a href="#ueber-mich">Über mich</a>
+  <a href="#bewerbung">Bewerben</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<section id="uber">
+  <h2>Uber Eats mit Mohamad</h2>
+  <p>Ich arbeite als Flottenunternehmer mit Uber Eats zusammen. Mit meinem Team liefern wir täglich frisch und pünktlich Essen direkt zu unseren Kunden in Kaiserslautern.</p>
+  <ul>
+    <li><strong>Liefergebiet:</strong> Kaiserslautern und Umgebung</li>
+    <li><strong>Qualität:</strong> Schulung, Zuverlässigkeit, Kundenorientierung</li>
+    <li><strong>Geschwindigkeit:</strong> Optimierte Routen und klare Abläufe</li>
+  </ul>
+</section>
+
+<section id="ueber-mich">
+  <h2>Über mich</h2>
+  <div class="grid">
+    <div>
+      <p>Ich heiße <strong>Mohamad Said Mahsin Abdullatif</strong> und bin Unternehmer sowie Flottenpartner bei Uber Eats. Mein Fokus: Verlässlicher Service, starke Organisation und ein Team, das Qualität liefert.</p>
+      <ul>
+        <li><strong>Erfahrung:</strong> Teamaufbau, Fahrerkoordination, Kundenservice</li>
+        <li><strong>IT:</strong> C#/.NET Grundlagen, Webdesign, Office & Tools</li>
+        <li><strong>Sprachen:</strong> Arabisch, Deutsch, Englisch, Türkisch</li>
+      </ul>
+    </div>
+    <div>
+      <!-- Dein Foto -->
+      <img class="profilbild" src="IMG_0675.PNG" alt="Mohamad im Büro" />
+    </div>
+  </div>
+</section>
+
+<section id="bewerbung">
+  <h2>Bewirb dich bei uns</h2>
+  <p>Wir suchen motivierte Fahrer und Teammitglieder. Fülle das Formular aus – wir melden uns schnell bei dir.</p>
+
+  <form action="mailto:hamudi515@outlook.de" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Vollständiger Name" required>
+    <input type="email" name="email" placeholder="E-Mail" required>
+    <input type="tel" name="telefon" placeholder="Telefonnummer" required>
+    <select name="position" required>
+      <option value="">Position wählen</option>
+      <option value="fahrer">Fahrer (Uber Eats)</option>
+      <option value="disposition">Disposition / Koordination</option>
+      <option value="service">Kundenservice</option>
+    </select>
+    <input type="text" name="stadt" placeholder="Stadt (z. B. Kaiserslautern)" required>
+    <select name="verfuegbarkeit" required>
+      <option value="">Verfügbarkeit</option>
+      <option value="vollzeit">Vollzeit</option>
+      <option value="teilzeit">Teilzeit</option>
+      <option value="minijob">Minijob</option>
+    </select>
+    <textarea name="nachricht" placeholder="Kurz über dich und deine Erfahrung…" required></textarea>
+    <button type="submit">Bewerbung senden</button>
+  </form>
+
+  <p style="margin-top:10px; font-size:13px; color:#666;">Hinweis: Der Versand öffnet deine E-Mail-App und fügt die Angaben automatisch ein.</p>
+</section>
+
+<section id="kontakt" class="contact">
+  <h2>Kontakt</h2>
+  <p>📍 Bierstraße 8, 67659 Kaiserslautern</p>
+  <p>📞 0176 72720148</p>
+  <p>📧 <a href="mailto:hamudi515@outlook.de">hamudi515@outlook.de</a></p>
+  <a class="cta" href="https://www.ubereats.com/de" target="_blank" rel="noopener">Über Uber Eats bestellen</a>
+</section>
+
+<footer>
+  &copy; 2025 Mohamad Unternehmer – Offizieller Flottenpartner von Uber Eats
+</footer>
+
+</body>
+</html>
